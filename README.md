@@ -1,23 +1,29 @@
-## Trabalho: 
-
-- Análise empírica de complexidade de algoritmos de busca
+## Análise empírica de complexidade de algoritmos de busca
 
 ## Dupla:
     
 - Leonandro Gurgel e Camila Duarte.
 
-## Compilação:
-      
-### Ubuntu:
+## Compilação e Execução:
 
-- No diretório da pasta do projeto realizar os comandos a seguir: cd source > g++ -std=c++11 main.cpp project.cpp -o exe  
+- ### Primeira opção: 
+**Ubuntu**:
+No diretório da pasta do projeto realizar os comandos a seguir:
+1. `cd source`
+2. `g++ -std=c++11 main.cpp project.cpp -o exe`  
+3. `./exe`
 
 **OBS:** Pode ser gerada uma warning devido a um retorno condicional nas funções recursivas, mas isso não afeta a funcionalidade do código
-
-## Execução:
-
-- No diretório da pasta do projeto realizar os comandos a seguir: cd source > ./exe
     
+- ### Segunda opção:
+
+Para utilizar makefile, no diretório da pasta do projeto realize os comandos a seguir:
+1. `mkdir build`
+2. `cd build`
+3. `cmake -G "Unix Makefiles" ..`
+4. `make`
+5. `./main`
+
 ## Funções de busca:
 	
 - Foram implementadas 7 funções de busca sendo elas: binary_iterative, binary_recursive, ternary_iterative, ternary_recursive, linear_iterative, jump_search e fibonacci_search.

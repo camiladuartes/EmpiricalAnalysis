@@ -1,0 +1,5 @@
+# CMake build
+build/
+
+# Final program
+exe
